@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Forms Assignment</title>
+</head>
+<body>
+    <h1>HTML Forms Assignment</h1>
+    <h2>Module 7 Lesson 3</h2>
+
+    <form action="">
+        <!-- Part 1 Task 1: Implementing Email Input with Button -->
+        <fieldset>
+            <legend>Submit Your Email</legend>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="your_email@example.com" aria-label="Enter your email" required>
+        </fieldset>
+
+        <button type="submit">Submit Email</button>
+        <!-- End of Part 1 Task 1 -->
+
+        <!-- Part 1 Task 2: Implementing Number Input with Button -->
+        <fieldset>
+            <legend>Pick a Number</legend>
+
+            <label for="numer">Numer 1-10:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" step="1" aria-label="Pick a number">
+        </fieldset>
+
+        <button type="submit">Submit Number</button>
+        <!-- End of Part 1 Task 2 -->
+
+        <!-- Part 1 Task 3: Implementing Date Input with Button -->
+        <fieldset>
+            <legend>Enter Today's Date</legend>
+
+            <label for="date">Date:</label>
+        <input type="date" name="date" id="date" placeholder="Today's Date" aria-label="Enter today's date">
+        </fieldset>
+
+        <button type="submit">Submit Today's Date</button>
+        <!-- End of Part 1 Task 3 -->
+
+        <!-- Part 1 Task 4: Implementing Range Input with Button -->
+        <fieldset>
+            <legend>Please Rate Us</legend>
+
+            <label for="rating">Rating:</label>
+        <input type="range" name="rating" id="rating" min="1" max="10" placeholder="1-10" aria-label="Please rate us">
+        </fieldset>
+
+        <button type="submit">Submit Rating</button>
+        <!-- End of Part 1 Task 4 -->
+
+        <!-- Part 1 Task 5 (Bonus): Implementing Color Input with Button -->
+        <fieldset>
+            <legend>Select Your Favorite Color</legend>
+
+            <label for="favcolor">Favorite Color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000" aria-label="Select your favorite color">
+        </fieldset>
+
+        <button type="submit">Submit Favorite Color</button>
+        <!-- End of Part 1 Task 5 (Bonus) -->
+
+        <!-- Part 2 Task 1: Creating a Selection Experience -->
+        <fieldset>
+            <legend>What is your favorite programming language?</legend>
+
+            <label for="favprogramlang">Favorite Programming Language:</label>
+            <select name="favprogramlang" id="favprogramlang" aria-label="Select your favorite programming language">
+                <option value="html">HTML</option>
+                <option value="python">Python</option>
+                <option value="sql">SQL</option>
+            </select>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Enter Your Experience Level</legend>
+
+            <input type="radio" name="experience level" id="beginner" value="beginner" aria-label="beginner">
+            <label for="beginner">Beginner</label>
+
+            <input type="radio" name="experience level" id="intermediate" value="intermediate" aria-label="intermediate">
+            <label for="intermediate">Intermediate</label>
+
+            <input type="radio" name="experience level" id="advanced" value="advanced" aria-label="advanced">
+            <label for="advanced">Advanced</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select Your Preferred Development Platform</legend>
+
+            <input type="checkbox" name="devplatform" id="web" value="web" aria-label="web">
+            <label for="web">Web</label>
+
+            <input type="checkbox" name="devplatform" id="mobile" value="mobile" aria-label="mobile">
+            <label for="mobile">Mobile</label>
+
+            <input type="checkbox" name="devplatform" id="desktop" value="desktop" aria-label="desktop">
+            <label for="desktop">Desktop</label>
+        </fieldset>
+
+        <button type="submit">Submit Form</button>
+    </form>
+</body>
+</html>
